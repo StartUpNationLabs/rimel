@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "mlflow",
+    "query": "import mlflow",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "test",
+    "query": "test query",
+    "extensions": ["azerty"]
+  }
+]
