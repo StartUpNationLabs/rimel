@@ -1,0 +1,283 @@
+[
+    {
+        "tool": "cml",
+        "query": "iterative/setup-cml@v1",
+        "extensions": [
+            "yml",
+            "yaml"
+        ],
+        "number": 716
+    },
+    {
+        "tool": "cml",
+        "query": "cml runner launch",
+        "extensions": [
+            "yml",
+            "yaml",
+            "sh"
+        ],
+        "number": 50
+    },
+    {
+        "tool": "cml",
+        "query": "cml comment create",
+        "extensions": [
+            "yml",
+            "yaml",
+            "sh"
+        ],
+        "number": 243
+    },
+    {
+        "tool": "cml",
+        "query": "cml check create",
+        "extensions": [
+            "yml",
+            "yaml",
+            "sh"
+        ],
+        "number": 6
+    },
+    {
+        "tool": "cml",
+        "query": "cml pr create",
+        "extensions": [
+            "yml",
+            "yaml",
+            "sh"
+        ],
+        "number": 26
+    },
+    {
+        "tool": "cml",
+        "query": "cml tensorboard connect",
+        "extensions": [
+            "yml",
+            "yaml",
+            "sh"
+        ],
+        "number": 3
+    },
+    {
+        "tool": "ClearML",
+        "query": "from clearml.automation",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 271
+    },
+    {
+        "tool": "ClearML",
+        "query": "from clearml import Task",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 1900
+    },
+    {
+        "tool": "ClearML",
+        "query": "clearml-agent",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 302
+    },
+    {
+        "tool": "ClearML",
+        "query": "clearml-session",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 5
+    },
+    {
+        "tool": "ClearML",
+        "query": "clearml-server",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 486
+    },
+    {
+        "tool": "MLflow",
+        "query": "mlflow.start_run",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 28400
+    },
+    {
+        "tool": "MLflow",
+        "query": "mlflow.log_params",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 10800
+    },
+    {
+        "tool": "MLflow",
+        "query": "mlflow.log_metrics",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 5100
+    },
+    {
+        "tool": "MLflow",
+        "query": "mlflow.register_model",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 5200
+    },
+    {
+        "tool": "MLflow",
+        "query": "MlflowClient",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 15100
+    },
+    {
+        "tool": "MLflow",
+        "query": "mlflow.set_registry_uri",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 2700
+    },
+    {
+        "tool": "MLflow",
+        "query": "mlflow.pyfunc",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 13100
+    },
+    {
+        "tool": "MLflow",
+        "query": "mlflow.recipes",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 438
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "from kfp",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 14700
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "from kubeflow.katib",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 328
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "kustomize",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 1900
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "from model_registry",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 223
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "from kserve",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 2300
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "import kserve",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 1300
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "kubectl",
+        "extensions": [
+            "py",
+            "ipynb",
+            "yml",
+            "yaml",
+            "sh"
+        ],
+        "number": 514000
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "sparkctl",
+        "extensions": [
+            "py",
+            "ipynb",
+            "yml",
+            "yaml",
+            "sh"
+        ],
+        "number": 67
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "from kubeflow.training",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 520
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "from kubeflow.storage_initializer",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 18
+    },
+    {
+        "tool": "Kubeflow",
+        "query": "from kserve",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "number": 2300
+    }
+]
