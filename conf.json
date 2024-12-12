@@ -1,12 +1,155 @@
 [
   {
-    "tool": "mlflow",
-    "query": "import mlflow",
+    "tool": "cml",
+    "query": "iterative/setup-cml@v1",
+    "extensions": ["yml", "yaml"]
+  },
+  {
+    "tool": "cml",
+    "query": "cml runner launch",
+    "extensions": ["yml", "yaml", "sh"]
+  },
+  {
+    "tool": "cml",
+    "query": "cml comment create",
+    "extensions": ["yml", "yaml", "sh"]
+  },
+  {
+    "tool": "cml",
+    "query": "cml check create",
+    "extensions": ["yml", "yaml", "sh"]
+  },
+  {
+    "tool": "cml",
+    "query": "cml pr create",
+    "extensions": ["yml", "yaml", "sh"]
+  },
+  {
+    "tool": "cml",
+    "query": "cml tensorboard connect",
+    "extensions": ["yml", "yaml", "sh"]
+  },
+
+  {
+    "tool": "ClearML",
+    "query": "from clearml.automation",
     "extensions": ["py", "ipynb"]
   },
   {
-    "tool": "test",
-    "query": "test query",
-    "extensions": ["azerty"]
+    "tool": "ClearML",
+    "query": "from clearml import Task",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "ClearML",
+    "query": "clearml-agent",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "ClearML",
+    "query": "clearml-session",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "ClearML",
+    "query": "clearml-server",
+    "extensions": ["py", "ipynb"]
+  },
+
+  {
+    "tool": "MLflow",
+    "query": "mlflow.start_run",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "MLflow",
+    "query": "mlflow.log_params",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "MLflow",
+    "query": "mlflow.log_metrics",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "MLflow",
+    "query": "mlflow.register_model",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "MLflow",
+    "query": "MlflowClient",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "MLflow",
+    "query": "mlflow.set_registry_uri",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "MLflow",
+    "query": "mlflow.pyfunc",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "MLflow",
+    "query": "mlflow.recipes",
+    "extensions": ["py", "ipynb"]
+  },
+
+  {
+    "tool": "Kubeflow",
+    "query": "from kfp",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "from kubeflow.katib",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "kustomize",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "from model_registry",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "from kserve",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "import kserve",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "kubectl",
+    "extensions": ["py", "ipynb", "yml", "yaml", "sh"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "sparkctl",
+    "extensions": ["py", "ipynb", "yml", "yaml", "sh"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "from kubeflow.training",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "from kubeflow.storage_initializer",
+    "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "from kserve",
+    "extensions": ["py", "ipynb"]
   }
 ]
