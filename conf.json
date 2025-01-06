@@ -109,11 +109,6 @@
   },
   {
     "tool": "Kubeflow",
-    "query": "kustomize",
-    "extensions": ["py", "ipynb"]
-  },
-  {
-    "tool": "Kubeflow",
     "query": "from model_registry",
     "extensions": ["py", "ipynb"]
   },
@@ -129,16 +124,6 @@
   },
   {
     "tool": "Kubeflow",
-    "query": "kubectl",
-    "extensions": ["py", "ipynb", "yml", "yaml", "sh"]
-  },
-  {
-    "tool": "Kubeflow",
-    "query": "sparkctl",
-    "extensions": ["py", "ipynb", "yml", "yaml", "sh"]
-  },
-  {
-    "tool": "Kubeflow",
     "query": "from kubeflow.training",
     "extensions": ["py", "ipynb"]
   },
@@ -146,6 +131,11 @@
     "tool": "Kubeflow",
     "query": "from kubeflow.storage_initializer",
     "extensions": ["py", "ipynb"]
+  },
+  {
+    "tool": "Kubeflow",
+    "query": "kubeflow.org/v1beta1",
+    "extensions": ["yml", "yaml", "sh"]
   },
   {
     "tool": "Kubeflow",
