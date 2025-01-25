@@ -125,7 +125,6 @@
     "extensions": ["py", "ipynb"],
     "purpose": ["tunning"]
   },
-
   {
     "tool": "Metaflow",
     "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*(Run|NBRunner)/",
