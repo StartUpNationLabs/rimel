@@ -172,5 +172,41 @@
     "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*(S3|namespace|project)/",
     "extensions": ["py", "ipynb"],
     "purpose": ["versioning"]
+  },
+  {
+    "tool": "azure machine learning",
+    "query": "/[\\s\\S]*(azure\\.ai\\.ml.*import)|(import.*azure\\.ai\\.ml)[\\s\\S]*/",
+    "extensions": ["py"],
+    "purpose": ["global"]
+  },
+  {
+      "tool": "azure machine learning",
+      "query": "/[\\s\\S]*((azure\\.ai\\.ml.*import)|(import.*azure\\.ai\\.ml))[\\s\\S]*(_metric)[\\s\\S]*/",
+      "extensions": ["py"],
+      "purpose": ["metric"]
+  },
+  {
+    "tool": "amazon sagemaker",
+    "query": "/[\\s\\S]*(sagemaker.*import)|(import.*sagemaker)[\\s\\S]*/",
+    "extensions": ["py"],
+    "purpose": ["global"]
+  },
+  {
+      "tool": "amazon sagemaker",
+      "query": "/[\\s\\S]*(sagemaker.*estimator)[\\s\\S]*/",
+      "extensions": ["py"],
+      "purpose": ["metric"]
+  },
+  {
+    "tool": "ibm watson studio",
+    "query": "/[\\s\\S]*(ibm_watson_studio_lib.*import)|(import.*ibm_watson_studio_lib)[\\s\\S]*/",
+    "extensions": ["py"],
+    "purpose": ["global"]
+  },
+  {
+      "tool": "ibm watson studio",
+      "query": "/[\\s\\S]*(ibm_watson_studio_lib.*import)|(import.*ibm_watson_studio_lib)[\\s\\S]*_metric[\\s\\S]*/",
+      "extensions": ["py"],
+      "purpose": ["metric"]
   }
 ]

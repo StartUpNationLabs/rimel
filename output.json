@@ -215,7 +215,8 @@
         "tool": "Wandb",
         "query": "/import wandb|from wandb/",
         "extensions": [
-            "py", "ipynb"
+            "py",
+            "ipynb"
         ],
         "purpose": [
             "global"
@@ -223,37 +224,105 @@
         "number": 197000
     },
     {
-      "tool": "Wandb",
-      "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log_artifact\\(/",
-      "extensions": [
-          "py", "ipynb"
-      ],
-      "purpose": [
-          "logging"
-      ],
-      "number": 12000
+        "tool": "Wandb",
+        "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log_artifact\\(/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "logging"
+        ],
+        "number": 12000
     },
     {
-      "tool": "Wandb",
-      "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log\\(/",
-      "extensions": [
-          "py", "ipynb"
-      ],
-      "purpose": [
-          "metrics"
-      ],
-      "number": 93000
+        "tool": "Wandb",
+        "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log\\(/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "metrics"
+        ],
+        "number": 93000
     },
     {
-      "tool": "Wandb",
-      "query": "/(?:import wandb(?:\\s+as\\s+\\w+)?|from wandb import)(\\s|\\S)*sweep/",
-      "extensions": [
-          "py", 
-          "ipynb"
-      ],
-      "purpose": [
-          "tunning"
-      ],
-      "number": 14400
+        "tool": "Wandb",
+        "query": "/(?:import wandb(?:\\s+as\\s+\\w+)?|from wandb import)(\\s|\\S)*sweep/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "tunning"
+        ],
+        "number": 14400
+    },
+    {
+        "tool": "azure machine learning",
+        "query": "/[\\s\\S]*(azure\\.ai\\.ml.*import)|(import.*azure\\.ai\\.ml)[\\s\\S]*/",
+        "extensions": [
+            "py"
+        ],
+        "purpose": [
+            "global"
+        ],
+        "number": 9600
+    },
+    {
+        "tool": "azure machine learning",
+        "query": "/[\\s\\S]*((azure\\.ai\\.ml.*import)|(import.*azure\\.ai\\.ml))[\\s\\S]*(_metric)[\\s\\S]*/",
+        "extensions": [
+            "py"
+        ],
+        "purpose": [
+            "metric"
+        ],
+        "number": 1400
+    },
+    {
+        "tool": "amazon sagemaker",
+        "query": "/[\\s\\S]*(sagemaker.*import)|(import.*sagemaker)[\\s\\S]*/",
+        "extensions": [
+            "py"
+        ],
+        "purpose": [
+            "global"
+        ],
+        "number": 22000
+    },
+    {
+        "tool": "amazon sagemaker",
+        "query": "/[\\s\\S]*(sagemaker.*estimator)[\\s\\S]*/",
+        "extensions": [
+            "py"
+        ],
+        "purpose": [
+            "metric"
+        ],
+        "number": 4500
+    },
+    {
+        "tool": "ibm watson studio",
+        "query": "/[\\s\\S]*(ibm_watson_studio_lib.*import)|(import.*ibm_watson_studio_lib)[\\s\\S]*/",
+        "extensions": [
+            "py"
+        ],
+        "purpose": [
+            "global"
+        ],
+        "number": 10
+    },
+    {
+        "tool": "ibm watson studio",
+        "query": "/[\\s\\S]*(ibm_watson_studio_lib.*import)|(import.*ibm_watson_studio_lib)[\\s\\S]*_metric[\\s\\S]*/",
+        "extensions": [
+            "py"
+        ],
+        "purpose": [
+            "metric"
+        ],
+        "number": 1
     }
 ]
