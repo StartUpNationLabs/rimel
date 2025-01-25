@@ -6,17 +6,10 @@
             "yml",
             "yaml"
         ],
-        "number": 716
-    },
-    {
-        "tool": "cml",
-        "query": "cml runner launch",
-        "extensions": [
-            "yml",
-            "yaml",
-            "sh"
+        "purpose": [
+            "global"
         ],
-        "number": 50
+        "number": 720
     },
     {
         "tool": "cml",
@@ -26,7 +19,10 @@
             "yaml",
             "sh"
         ],
-        "number": 243
+        "purpose": [
+            "metric"
+        ],
+        "number": 295
     },
     {
         "tool": "cml",
@@ -36,17 +32,10 @@
             "yaml",
             "sh"
         ],
-        "number": 6
-    },
-    {
-        "tool": "cml",
-        "query": "cml pr create",
-        "extensions": [
-            "yml",
-            "yaml",
-            "sh"
+        "purpose": [
+            "metric"
         ],
-        "number": 26
+        "number": 6
     },
     {
         "tool": "cml",
@@ -56,228 +45,215 @@
             "yaml",
             "sh"
         ],
-        "number": 3
+        "purpose": [
+            "metric"
+        ],
+        "number": 2
     },
     {
         "tool": "ClearML",
-        "query": "from clearml.automation",
+        "query": "/from clearml import Task[\\s\\S]*?Task\\.init\\([\\s\\S]*?auto_connect_frameworks\\s*=\\s*True/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 271
+        "purpose": [
+            "logging",
+            "metric"
+        ],
+        "number": 36
     },
     {
         "tool": "ClearML",
-        "query": "from clearml import Task",
+        "query": "/(?:import clearml(?:\\s+as\\s+\\w+)?|from clearml import)(\\s|\\S)*(\\.report_scalar|\\.report_single_value|\\.report_histogram|\\.report_vector|\\.report_table|\\.report_line_plot|\\.report_scatter2d|\\.report_confusion_matrix|\\.report_scatter3d|\\.report_surface)/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 1900
+        "purpose": [
+            "metric"
+        ],
+        "number": 1100
     },
     {
         "tool": "ClearML",
-        "query": "clearml-agent",
+        "query": "/(?:import clearml(?:\\s+as\\s+\\w+)?|from clearml import)(\\s|\\S)*OutputModel/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 302
+        "purpose": [
+            "logging"
+        ],
+        "number": 229
     },
     {
         "tool": "ClearML",
-        "query": "clearml-session",
+        "query": "/from clearml import|import clearml/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 5
-    },
-    {
-        "tool": "ClearML",
-        "query": "clearml-server",
-        "extensions": [
-            "py",
-            "ipynb"
+        "purpose": [
+            "global"
         ],
-        "number": 486
+        "number": 4400
     },
     {
         "tool": "MLflow",
-        "query": "mlflow.start_run",
+        "query": "/(?:import mlflow(?:\\s+as\\s+\\w+)?|from mlflow import)(\\s|\\S)*log_params/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 28400
+        "purpose": [
+            "metric"
+        ],
+        "number": 11100
     },
     {
         "tool": "MLflow",
-        "query": "mlflow.log_params",
+        "query": "/(?:import mlflow(?:\\s+as\\s+\\w+)?|from mlflow import)(\\s|\\S)*log_metrics/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 10800
+        "purpose": [
+            "metric"
+        ],
+        "number": 8200
     },
     {
         "tool": "MLflow",
-        "query": "mlflow.log_metrics",
+        "query": "/(?:import mlflow(?:\\s+as\\s+\\w+)?|from mlflow import)(\\s|\\S)*register_model/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 5100
+        "purpose": [
+            "logging"
+        ],
+        "number": 6700
     },
     {
         "tool": "MLflow",
-        "query": "mlflow.register_model",
+        "query": "/(from mlflow import|import mlflow)(.|,|\\s\\S)*pyfunc(,.*)?[\\s\\S]*?[\\s\\S]*?save_model/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 5200
+        "purpose": [
+            "logging"
+        ],
+        "number": 3100
     },
     {
         "tool": "MLflow",
-        "query": "MlflowClient",
+        "query": "/(from mlflow import|import mlflow)(.|,|\\s\\S)*pyfunc(,.*)?[\\s\\S]*?[\\s\\S]*?log_model/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 15100
+        "purpose": [
+            "logging"
+        ],
+        "number": 4200
     },
     {
         "tool": "MLflow",
-        "query": "mlflow.set_registry_uri",
+        "query": "/from mlflow import|import mlflow/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 2700
-    },
-    {
-        "tool": "MLflow",
-        "query": "mlflow.pyfunc",
-        "extensions": [
-            "py",
-            "ipynb"
+        "purpose": [
+            "global"
         ],
-        "number": 13100
-    },
-    {
-        "tool": "MLflow",
-        "query": "mlflow.recipes",
-        "extensions": [
-            "py",
-            "ipynb"
-        ],
-        "number": 438
+        "number": 60400
     },
     {
         "tool": "Kubeflow",
-        "query": "from kfp",
+        "query": "/apiVersion( )*:( )*kubeflow\\.org/v1beta1(\\s|\\S)*kind( )*:( )*Experiment/",
         "extensions": [
-            "py",
-            "ipynb"
-        ],
-        "number": 14700
-    },
-    {
-        "tool": "Kubeflow",
-        "query": "from kubeflow.katib",
-        "extensions": [
-            "py",
-            "ipynb"
-        ],
-        "number": 328
-    },
-    {
-        "tool": "Kubeflow",
-        "query": "kustomize",
-        "extensions": [
-            "py",
-            "ipynb"
-        ],
-        "number": 1900
-    },
-    {
-        "tool": "Kubeflow",
-        "query": "from model_registry",
-        "extensions": [
-            "py",
-            "ipynb"
-        ],
-        "number": 223
-    },
-    {
-        "tool": "Kubeflow",
-        "query": "from kserve",
-        "extensions": [
-            "py",
-            "ipynb"
-        ],
-        "number": 2300
-    },
-    {
-        "tool": "Kubeflow",
-        "query": "import kserve",
-        "extensions": [
-            "py",
-            "ipynb"
-        ],
-        "number": 1300
-    },
-    {
-        "tool": "Kubeflow",
-        "query": "kubectl",
-        "extensions": [
-            "py",
-            "ipynb",
-            "yml",
             "yaml",
-            "sh"
+            "yml"
         ],
-        "number": 514000
+        "purpose": [
+            "logging",
+            "metric",
+            "tunning"
+        ],
+        "number": 236
     },
     {
         "tool": "Kubeflow",
-        "query": "sparkctl",
-        "extensions": [
-            "py",
-            "ipynb",
-            "yml",
-            "yaml",
-            "sh"
-        ],
-        "number": 67
-    },
-    {
-        "tool": "Kubeflow",
-        "query": "from kubeflow.training",
+        "query": "/(?:import kubeflow(?:\\s+as\\s+\\w+)?|from kubeflow import)(\\s|\\S)*katib(\\s|\\S|\\w)*\\.tune/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 520
+        "purpose": [
+            "logging",
+            "metric",
+            "tunning"
+        ],
+        "number": 10
     },
     {
         "tool": "Kubeflow",
-        "query": "from kubeflow.storage_initializer",
+        "query": "/^(from kfp|import kfp|from kubeflow|import kubeflow|from model_registry|import model_registry)/",
         "extensions": [
             "py",
             "ipynb"
         ],
-        "number": 18
+        "purpose": [
+            "global"
+        ],
+        "number": 14300
     },
     {
-        "tool": "Kubeflow",
-        "query": "from kserve",
+        "tool": "Wandb",
+        "query": "/import wandb|from wandb/",
         "extensions": [
-            "py",
-            "ipynb"
+            "py", "ipynb"
         ],
-        "number": 2300
+        "purpose": [
+            "global"
+        ],
+        "number": 197000
+    },
+    {
+      "tool": "Wandb",
+      "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log_artifact\\(/",
+      "extensions": [
+          "py", "ipynb"
+      ],
+      "purpose": [
+          "logging"
+      ],
+      "number": 12000
+    },
+    {
+      "tool": "Wandb",
+      "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log\\(/",
+      "extensions": [
+          "py", "ipynb"
+      ],
+      "purpose": [
+          "metrics"
+      ],
+      "number": 93000
+    },
+    {
+      "tool": "Wandb",
+      "query": "/(?:import wandb(?:\\s+as\\s+\\w+)?|from wandb import)(\\s|\\S)*sweep/",
+      "extensions": [
+          "py", 
+          "ipynb"
+      ],
+      "purpose": [
+          "tunning"
+      ],
+      "number": 14400
     }
 ]

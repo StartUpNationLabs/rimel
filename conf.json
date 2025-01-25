@@ -37,7 +37,7 @@
   },
   {
     "tool": "ClearML",
-    "query": "/(?:import clearml(?:\\s+as\\s+\\w+)?|from clearmlimport)(\\s|\\S)*OutputModel/",
+    "query": "/(?:import clearml(?:\\s+as\\s+\\w+)?|from clearml import)(\\s|\\S)*OutputModel/",
     "extensions": ["py", "ipynb"],
     "purpose": ["logging"]
   },
@@ -100,5 +100,29 @@
     "query": "/^(from kfp|import kfp|from kubeflow|import kubeflow|from model_registry|import model_registry)/",
     "extensions": ["py","ipynb"],
     "purpose": ["global"]
+  },
+  {
+    "tool": "Wandb",
+    "query": "/import wandb|from wandb/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["global"]
+  },
+  {
+    "tool": "Wandb",
+    "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log_artifact\\(/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["logging"]
+  },
+  {
+    "tool": "Wandb",
+    "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log\\(/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["metrics"]
+  },
+  {
+    "tool": "Wandb",
+    "query": "/(?:import wandb(?:\\s+as\\s+\\w+)?|from wandb import)(\\s|\\S)*sweep/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["tunning"]
   }
 ]
