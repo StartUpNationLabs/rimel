@@ -124,5 +124,54 @@
     "query": "/(?:import wandb(?:\\s+as\\s+\\w+)?|from wandb import)(\\s|\\S)*sweep/",
     "extensions": ["py", "ipynb"],
     "purpose": ["tunning"]
+  },
+
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*(Run|NBRunner)/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["logging"]
+  },
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import(?:\\s+\\w+,\\s*)*Runner)(?:\\s|\\S)*\\.stream_log/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["logging"]
+  },
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import(?:\\s+\\w+,\\s*)*Step)(?:\\s|\\S)*\\.task.data/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["logging"]
+  },
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*card/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["metrics"]
+  },
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(\\s|\\S)*get_cards/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["metrics"]
+  },
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(\\s|\\S)*(Markdown|Table|Image|Artifact|VegaChart|ProgressBar|MetaflowCard)/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["metrics", "tunning"]
+  },
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import(?:\\s+\\w+,\\s*)*Run)(?:\\s|\\S)*\\.add_tag/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["versioning"]
+  },
+  {
+    "tool": "Metaflow",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*(S3|namespace|project)/",
+    "extensions": ["py", "ipynb"],
+    "purpose": ["versioning"]
   }
 ]
