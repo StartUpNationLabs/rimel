@@ -267,7 +267,8 @@
             "ipynb"
         ],
         "purpose": [
-            "logging"
+            "metric",
+            "tuning"
         ],
         "number": 860
     },
@@ -279,7 +280,8 @@
             "ipynb"
         ],
         "purpose": [
-            "logging"
+            "metric",
+            "tuning"
         ],
         "number": 15
     },
@@ -291,7 +293,7 @@
             "ipynb"
         ],
         "purpose": [
-            "logging"
+            "metric"
         ],
         "number": 225
     },
@@ -327,8 +329,7 @@
             "ipynb"
         ],
         "purpose": [
-            "metric",
-            "tuning"
+            "metric"
         ],
         "number": 195
     },
@@ -340,7 +341,7 @@
             "ipynb"
         ],
         "purpose": [
-            "versioning"
+            "logging"
         ],
         "number": 59
     },
@@ -352,7 +353,7 @@
             "ipynb"
         ],
         "purpose": [
-            "versioning"
+            "logging"
         ],
         "number": 880
     },
