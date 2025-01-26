@@ -87,13 +87,13 @@
     "tool": "Kubeflow",
     "query": "/apiVersion( )*:( )*kubeflow\\.org\/v1beta1(\\s|\\S)*kind( )*:( )*Experiment/",
     "extensions": ["yaml","yml"],
-    "purpose": ["logging", "metric", "tunning"]
+    "purpose": ["logging", "metric", "tuning"]
   },
   {
     "tool": "Kubeflow",
     "query": "/(?:import kubeflow(?:\\s+as\\s+\\w+)?|from kubeflow import)(\\s|\\S)*katib(\\s|\\S|\\w)*\\.tune/",
     "extensions": ["py","ipynb"],
-    "purpose": ["logging", "metric", "tunning"]
+    "purpose": ["logging", "metric", "tuning"]
   },
   {
     "tool": "Kubeflow",
@@ -117,59 +117,59 @@
     "tool": "Wandb",
     "query": "/(import wandb|from wandb)(\\s|\\S|\\w)*\\.log\\(/",
     "extensions": ["py", "ipynb"],
-    "purpose": ["metrics"]
+    "purpose": ["metric"]
   },
   {
     "tool": "Wandb",
     "query": "/(?:import wandb(?:\\s+as\\s+\\w+)?|from wandb import)(\\s|\\S)*sweep/",
     "extensions": ["py", "ipynb"],
-    "purpose": ["tunning"]
+    "purpose": ["tuning"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*(Run|NBRunner)/",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(?:\\s|[^#])*\\b(Run|NBRunner)\\b/",
     "extensions": ["py", "ipynb"],
     "purpose": ["logging"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import(?:\\s+\\w+,\\s*)*Runner)(?:\\s|\\S)*\\.stream_log/",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*\\.stream_log/",
     "extensions": ["py", "ipynb"],
     "purpose": ["logging"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import(?:\\s+\\w+,\\s*)*Step)(?:\\s|\\S)*\\.task.data/",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*\\.task.data/",
     "extensions": ["py", "ipynb"],
     "purpose": ["logging"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*card/",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(?:\\s|[^#])*\\bcard\\b/",
     "extensions": ["py", "ipynb"],
-    "purpose": ["metrics"]
+    "purpose": ["metric"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(\\s|\\S)*get_cards/",
+    "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(?:\\s|[^#])*\\bget_cards\\b/",
     "extensions": ["py", "ipynb"],
-    "purpose": ["metrics"]
+    "purpose": ["metric"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(\\s|\\S)*(Markdown|Table|Image|Artifact|VegaChart|ProgressBar|MetaflowCard)/",
+    "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(?:\\s|[^#])*\\b(Markdown|Table|Image|Artifact|VegaChart|ProgressBar|MetaflowCard)\\b/",
     "extensions": ["py", "ipynb"],
-    "purpose": ["metrics", "tunning"]
+    "purpose": ["metric", "tuning"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import(?:\\s+\\w+,\\s*)*Run)(?:\\s|\\S)*\\.add_tag/",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*\\.add_tag/",
     "extensions": ["py", "ipynb"],
     "purpose": ["versioning"]
   },
   {
     "tool": "Metaflow",
-    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*(S3|namespace|project)/",
+    "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(?:\\s|[^#])*\\b(S3|namespace|project)\\b/",
     "extensions": ["py", "ipynb"],
     "purpose": ["versioning"]
   },

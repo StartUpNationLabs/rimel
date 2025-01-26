@@ -181,7 +181,7 @@
         "purpose": [
             "logging",
             "metric",
-            "tunning"
+            "tuning"
         ],
         "number": 236
     },
@@ -195,7 +195,7 @@
         "purpose": [
             "logging",
             "metric",
-            "tunning"
+            "tuning"
         ],
         "number": 10
     },
@@ -243,7 +243,7 @@
             "ipynb"
         ],
         "purpose": [
-            "metrics"
+            "metric"
         ],
         "number": 93000
     },
@@ -255,9 +255,106 @@
             "ipynb"
         ],
         "purpose": [
-            "tunning"
+            "tuning"
         ],
         "number": 14400
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(?:\\s|[^#])*\\b(Run|NBRunner)\\b/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "logging"
+        ],
+        "number": 860
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*\\.stream_log/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "logging"
+        ],
+        "number": 15
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*\\.task.data/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "logging"
+        ],
+        "number": 225
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(?:\\s|[^#])*\\bcard\\b/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "metric"
+        ],
+        "number": 456
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(?:\\s|[^#])*\\bget_cards\\b/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "metric"
+        ],
+        "number": 26
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow.cards(?:\\s+as\\s+\\w+)?|from metaflow.cards import)(?:\\s|[^#])*\\b(Markdown|Table|Image|Artifact|VegaChart|ProgressBar|MetaflowCard)\\b/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "metric",
+            "tuning"
+        ],
+        "number": 195
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(\\s|\\S)*\\.add_tag/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "versioning"
+        ],
+        "number": 59
+    },
+    {
+        "tool": "Metaflow",
+        "query": "/(?:import metaflow(?:\\s+as\\s+\\w+)?|from metaflow import)(?:\\s|[^#])*\\b(S3|namespace|project)\\b/",
+        "extensions": [
+            "py",
+            "ipynb"
+        ],
+        "purpose": [
+            "versioning"
+        ],
+        "number": 880
     },
     {
         "tool": "azure machine learning",
