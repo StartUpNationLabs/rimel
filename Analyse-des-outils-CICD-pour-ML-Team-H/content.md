@@ -258,7 +258,7 @@ However we can see that more recent companies like OpenAI are using publicly ava
 In this report, we examined the array of experiment tracking tools used in machine learning, focusing on both open-source and private solutions. Our findings highlighted several important aspects:
 
 1. **Needs of developers in Machine Learning**: ML developers require tools that facilitate the organization, versioning, and monitoring of training sessions to ensure efficient and effective model development.
-2. **Existing tools**: We identified several popular tools used in the industry, including CML, ClearML, MLFlow, KubeFlow, and WanDB. These tools have gained popularity due to their features and ease of use.
+2. **Existing tools**: We identified several popular tools used in the industry, including WandB, MLFlow, and KubeFlow. These tools have gained popularity due to their features and ease of use.
 3. **Tool usage and adoption**:
     - **Open Source**: Open-source tools have seen varying levels of adoption. WanDB stands out as a widely used tool, likely due to its accessibility and comprehensive feature set. Other tools like MLFlow and KubeFlow are also popular but serve slightly different purposes within the machine learning pipeline.
     - **Private sector**: Many large companies developed their own proprietary tools before the advent of robust open-source solutions. Companies like Netflix, Uber and Facebook created custom tools designed to meet their specific needs. This trend highlights the importance of having dedicated solutions that address the unique demands of large-scale machine learning operations.
